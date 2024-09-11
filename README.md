@@ -70,18 +70,19 @@
 ## GitHub Desktopの使い方
 参考 : [GitHub Desktopの使い方](https://www.kagoya.jp/howto/it-glossary/develop/githubdesktop/)
 
-### リポジトリのクローン
+### リポジトリのclone
 1. 上の「File」から「Clone repository...」を選択する
     <img hegith="300" src="image.png">
 
 2. クローンしたいリポジトリ「Oninooonigirionigiriniki」を選択し、リポジトリをクローンする場所(自分の好きな場所)を選択する。
     <img heigth="300" src="image-1.png">
 
-### コミット
+### fetch・pull
 
-### プッシュ
+### commit
 
-### プル
+### push
+
 
 ## コミットメッセージの書き方
 ### テンプレート
