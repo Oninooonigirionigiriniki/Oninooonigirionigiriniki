@@ -7,13 +7,81 @@
 
 ## 環境構築
 ### インストールするもの
-* Flutter : 3.24.2
-* Android Studio : 2024.1
+* fvm : 3.2.1(最新)
+* Flutter : 3.24.2(stable 最新)
+* Android Studio : 2024.1(最新)
+* GitHub Desktop
 
-### 構築手順
-[Flutter環境構築(Mac編)](https://zenn.dev/heyhey1028/books/flutter-basics/viewer/getting_started_mac)
+### 構築手順(Flutter・Android・fvm)
+1. 以下のリンクから`Flutter`と`Android Studio`をインストールしてください。
 
-[Flutter環境構築(Windows編)](https://zenn.dev/heyhey1028/books/flutter-basics/viewer/getting_started_windows)
+    * [Flutter環境構築(Mac編)](https://zenn.dev/heyhey1028/books/flutter-basics/viewer/getting_started_mac)
+    * [Flutter環境構築(Windows編)](https://zenn.dev/heyhey1028/books/flutter-basics/viewer/getting_started_windows)
+
+2. fvmのインストール    
+    ```
+    // 以下のコードを実行してfvmをインストール
+    dart pub global activate fvm
+
+    // インストールしたfvmのバージョンが表示されればOK
+    fvm --version
+    ```
+3. fvmでFlutterのバージョンの指定
+
+    以下のコマンドを実行して、このプロジェクトで使用するFlutterのバージョンを指定します。
+    ```
+    fvm use 3.24.2
+    ```
+    以下のような質問がきたら「y」を入力します。
+    ```
+    Flutter "stable" is not installed.
+    Would you like to install it? Y/n:
+    ```
+4. その他設定
+
+    「.gitignore」ファイルに以下の文があるか確認し、一番下に追加してください。
+    ```
+    .fvm/
+    ```
+
+    「.vscode/setting.json」に以下のようにコードを追加してください。
+    ```
+    {
+        "dart.flutterSdkPath": ".fvm/versions/3.24.2",
+
+        -------- ここから --------
+        // 検索対象からFVMのファイルを除外します。
+        "search.exclude": {
+            "**/.fvm": true
+        },
+        // ファイル監視対象からFVMのファイルを除外します。
+        "files.watcherExclude": {
+            "**/.fvm": true
+        },
+        -------- ここまで --------
+    }
+    ```
+### 構築手順(GitHub Desktop)
+1. 以下のURLからインストーラーをダウンロードする<br>
+    * [https://desktop.github.com/download/](https://desktop.github.com/download/)
+2. インストールする
+
+
+## GitHub Desktopの使い方
+参考 : [GitHub Desktopの使い方](https://www.kagoya.jp/howto/it-glossary/develop/githubdesktop/)
+
+### リポジトリのクローン
+1. 上の「File」から「Clone repository...」を選択する
+    <img hegith="300" src="image.png">
+
+2. クローンしたいリポジトリ「Oninooonigirionigiriniki」を選択し、リポジトリをクローンする場所(自分の好きな場所)を選択する。
+    <img heigth="300" src="image-1.png">
+
+### コミット
+
+### プッシュ
+
+### プル
 
 ## コミットメッセージの書き方
 ### テンプレート
@@ -32,4 +100,8 @@
 ### 例
 ```
 [Add] ユーザー登録機能の追加
+```
+
+## ディレクトリ構成
+```
 ```
