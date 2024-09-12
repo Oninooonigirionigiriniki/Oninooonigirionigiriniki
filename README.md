@@ -11,6 +11,7 @@
 * Flutter : 3.24.2(stable 最新)
 * Android Studio : 2024.1(最新)
 * GitHub Desktop
+* Java : 1.8
 
 ### 構築手順(Flutter・Android・fvm)
 1. 以下のリンクから`Flutter`と`Android Studio`をインストールしてください。
@@ -61,6 +62,11 @@
         -------- ここまで --------
     }
     ```
+
+### Java 1.8のインストール
+1. 以下のリンクからJava 1.8をダウンロードしてインストールしてください。
+    * [Java SE Development Kit 8 Downloads](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
+
 ### 構築手順(GitHub Desktop)
 1. 以下のURLからインストーラーをダウンロードする<br>
     * [https://desktop.github.com/download/](https://desktop.github.com/download/)
