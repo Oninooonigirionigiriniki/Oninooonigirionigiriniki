@@ -13,3 +13,6 @@
 build/
 # Obsolete
 .flutter-*
+
+# IntelliJ related
+.idea/
